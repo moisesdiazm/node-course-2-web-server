@@ -32,7 +32,6 @@ app.use((req, res, next) => {
 
 app.use(express.static(__dirname + '/public'));
 
-
 app.get('/', (req, res)=>{
     res.render('home.hbs',{
        titlePage: 'Home Page',
@@ -53,7 +52,6 @@ app.get('/bad', (req, res)=>{
         errorMessage: true
     });
 });
-
 
 
 app.listen(8000, ()=> {
